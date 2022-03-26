@@ -1,4 +1,4 @@
-
+var present_date ;
 function buttonPress() {
     console.log("Button Pressed");
     sendApiRequest();
@@ -27,7 +27,7 @@ async function sendApiRequest() {
     let year_val = "";
     year_val += year;
 
-    let present_date = year_val + "-" + month_val + "-" + day_val;
+    present_date = year_val + "-" + month_val + "-" + day_val;
 
     let response = await fetch('https://api.nasa.gov/neo/rest/v1/feed?start_date=' + present_date + '&end_date=' + present_date + '&api_key=' + API_KEY);
     console.log(response);
@@ -48,11 +48,11 @@ function useApiData(data) {
     for (let i = 0; i < n; i++){
         text += "<tr>" ;
         
-            text += "<td>" + data.near_earth_objects["2022-02-25"][i].id + "</td>";
-            text += "<td>" + data.near_earth_objects["2022-02-25"][i].name + "</td>";
-            text += "<td>" + data.near_earth_objects["2022-02-25"][i].estimated_diameter.feet.estimated_diameter_min + "</td>";
-            text += "<td>" + data.near_earth_objects["2022-02-25"][i].close_approach_data[0].relative_velocity.kilometers_per_hour + "</td>";
-            text += "<td>" + data.near_earth_objects["2022-02-25"][i].close_approach_data[0].close_approach_date_full + "</td>";
+            text += "<td>" + data.near_earth_objects[present_date][i].id + "</td>";
+            text += "<td>" + data.near_earth_objects[present_date][i].name + "</td>";
+            text += "<td>" + data.near_earth_objects[present_date][i].estimated_diameter.feet.estimated_diameter_min + "</td>";
+            text += "<td>" + data.near_earth_objects[present_date][i].close_approach_data[0].relative_velocity.kilometers_per_hour + "</td>";
+            text += "<td>" + data.near_earth_objects[present_date][i].close_approach_data[0].close_approach_date_full + "</td>";
 
         text += "</tr>" ;
     }
