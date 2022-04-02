@@ -156,9 +156,9 @@ body .footer .creators:hover {
     text-align: center;
 }
 
-#apodimage{
+#apodimage {
     text-align: center;
-    margin-left:350px ;
+    margin-left: 350px;
     margin-right: 350px;
     opacity: 0.1;
     background-repeat: repeat;
@@ -179,9 +179,6 @@ body .footer .creators:hover {
     /* z-index: 10 ; */
     margin-left: 5%;
     margin-right: 5%;
-}
-
-#pipi #imageurl {
     margin-top: 0px;
     /* margin : 5px ; */
     border: 2px solid whitesmoke;
