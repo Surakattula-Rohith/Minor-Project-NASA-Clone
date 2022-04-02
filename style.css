@@ -7,13 +7,26 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body .header{
+    background-color: #222831;
+    color: #EEEEEE;
+}
+
+body .footer{
+    background-color: #222831;
+    color: #EEEEEE;
+    height: 60px;
+}
+
+
+
 .scroll-right {
     height: 50px;
     overflow: hidden;
     position: relative;
-    background: yellow;
-    color: black;
-    border: 1px solid orange;
+    background: #3A3845;
+    color: white;
+    border: 1px solid whitesmoke;
 }
 
 .scroll-right p {
@@ -75,11 +88,9 @@ body {
 
 .header {
     background-color: #f1f1f1;
-    clear: both;
-    padding-bottom: 9px;
-    margin-bottom: 100px;
+    clear: both;     
     z-index: 1;
-    height: 10%;
+    height: 12%;
     text-align: center;
     position: fixed;
     top: 0;
@@ -93,26 +104,31 @@ body {
 
 /* Style the side navigation */
 .sidenav {
+    top: 1%;
     z-index:1 ;
     clear: both;
-    width: 200px;
+    width: 205px;
     padding-top: 30px;
+    /* margin-top: 100px; */
     height: 100%;
     position: fixed;
-    top: 10%;
+    top: 9%;
     left: 0;
     clear: right;
-    background-color: #111;
+    background-color: #222831;
     overflow-x: hidden;
 }
 
 
 /* Side navigation links */
 .sidenav a {
+    margin: 1px;
     color: white;
-    border: 1px solid #111;
+    background-color: #00ADB5;
+    border: 0.5px solid #C8F2EF;
+
     padding: 16px;
-    width: 200px;
+    width: 201px;
     text-decoration: none;
     display: block;
 }
@@ -120,22 +136,22 @@ body {
 
 #sidenavup {
     position: fixed;
-    top: 10%;
+    top: 10.5%;
     left: 0;
 }
 
 #sidenavdown {
     position: fixed;
-    bottom: 10%;
+    bottom: 8.5%;
     left: 0;
 }
 
 
 /* Change color on hover */
 .sidenav a:hover {
-    border: 2px solid #333;
-    background-color: #ddd;
-    color: black;
+    border: 2px solid white;
+    background-color: #364F6B;
+    color: white;
 }
 
 /* Style the content */
@@ -146,7 +162,7 @@ body {
     padding-top: 6%;
     margin-left: 200px;
     padding-left: 20px;
-    padding-bottom: 6%;
+    padding-bottom: 5%;
     color: #ddd;
     background-image: url('/pictures/logoearthpic.jpg');
     opacity: 0.9;
@@ -165,6 +181,7 @@ body {
     color: #111;
     border: 1px solid #111;
     padding: 16px;
+    /* height: 50px; */
     width: 200px;
     text-decoration: none;
     display: block;
@@ -212,23 +229,36 @@ body {
 }
 
 .emaildetails {
+    background-color: #FEECE9;
     position: fixed;
     bottom: 0;
     left: 0;
 }
 
 .creators {
+    background-color: #FEECE9;
     position: fixed;
     bottom: 0;
     right: 0;
 }
 
+body .footer .emaildetails:hover{
+    background-color: #105652;
+    color: #FAEEE0;
+}
+
+body .footer .creators:hover{
+    background-color: #105652;    
+    color: #FAEEE0;
+}
+
 .footer {
-    background-color: #f1f1f1;
+    /* background-color: #f1f1f1; */
     clear: both;
     z-index: 2;
-    padding: 10px;
-    height: 10%;
+    margin-top: 0%;
+    
+    height:10%;
     position: fixed;
     bottom: 0;
     right: 0;
