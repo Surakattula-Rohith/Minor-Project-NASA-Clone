@@ -7,12 +7,12 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body .header{
+body .header {
     background-color: #222831;
     color: #EEEEEE;
 }
 
-body .footer{
+body .footer {
     background-color: #222831;
     color: #EEEEEE;
     height: 60px;
@@ -88,7 +88,7 @@ body .footer{
 
 .header {
     background-color: #f1f1f1;
-    clear: both;     
+    clear: both;
     z-index: 1;
     height: 12%;
     text-align: center;
@@ -105,7 +105,7 @@ body .footer{
 /* Style the side navigation */
 .sidenav {
     top: 1%;
-    z-index:1 ;
+    z-index: 1;
     clear: both;
     width: 205px;
     padding-top: 30px;
@@ -196,21 +196,32 @@ body .footer{
 .tooltiptext {
     visibility: hidden;
     width: 120px;
-    background-color: black;
+    background-color: #180A0A;
     color: #fff;
     text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
+    width: auto;
+    border-radius: 7px;
     position: absolute;
     z-index: 1;
     bottom: 100%;
     left: 50%;
     margin-left: -60px;
-
-    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
     opacity: 0;
     transition: opacity .8s;
 }
+
+.tooltiptext p {
+    margin: 10px;
+}
+
+.tooltiptext p:hover {
+    background-color: whitesmoke;
+    color: #180A0A;
+    margin: 10px;
+    padding: 1px;
+    border-radius: 8px;
+}
+
 
 .tooltiptext::after {
     content: "";
@@ -242,13 +253,13 @@ body .footer{
     right: 0;
 }
 
-body .footer .emaildetails:hover{
+body .footer .emaildetails:hover {
     background-color: #105652;
     color: #FAEEE0;
 }
 
-body .footer .creators:hover{
-    background-color: #105652;    
+body .footer .creators:hover {
+    background-color: #105652;
     color: #FAEEE0;
 }
 
@@ -257,8 +268,8 @@ body .footer .creators:hover{
     clear: both;
     z-index: 2;
     margin-top: 0%;
-    
-    height:10%;
+
+    height: 10%;
     position: fixed;
     bottom: 0;
     right: 0;
