@@ -42,12 +42,12 @@ body .footer {
     /* top : 13% ; */
     /* margin: 20px; */
     margin-top: 6%;
-    
+
     padding-top: 5px;
-    padding-left: 10px ;
+    padding-left: 10px;
     padding-right: 10px;
-    
-    
+
+
     color: black;
     background-image: url('/pictures/ajfsfa.webp');
     background-size: cover;
@@ -56,7 +56,7 @@ body .footer {
 
 }
 
-.content #search{
+.content #search {
     margin-top: 10px;
 
 }
@@ -71,7 +71,7 @@ body .footer {
     padding-left: 10px;
     padding-bottom: 20px;
     margin: 0px;
-    
+
     background-image: url('/pictures/gipy_3.webp');
 }
 
@@ -187,7 +187,7 @@ body .footer .creators:hover {
 
 }
 
-#pipi #imageurl img{
+#pipi #imageurl img {
     /* z-index: 10 ; */
     /* padding: 5%;
     margin-left : 5% ;
@@ -205,26 +205,25 @@ body .footer .creators:hover {
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
-    width: 50% ;
+    width: 50%;
     overflow: auto;
     border: 2px solid whitesmoke;
     opacity: 0.7;
     /* background-color: #38A3A5; */
-    
+
 }
 
-#pipi{
+#pipi {
     border: 2px solid whitesmoke;
-    margin-top: 0px ;
+    margin-top: 0px;
     padding-top: 0px;
 }
 
-#pipi #imageurl img:hover{
+#pipi #imageurl img:hover {
     opacity: 1;
 }
 
-#ho{
+#ho {
     padding: 10px;
     text-align: justify;
 }
-

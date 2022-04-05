@@ -5,51 +5,74 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #E8FFC2;
+}
+
+body .header {
+    background-color: #222831;
+    color: #EEEEEE;
+}
+
+body .footer {
+    background-color: #222831;
+    color: #EEEEEE;
+    height: 60px;
 }
 
 .header {
     background-color: #f1f1f1;
-
-    height: 10%;
-
+    clear: both;
+    z-index: 1;
+    height: 12%;
     text-align: center;
     position: fixed;
     top: 0;
     right: 0;
+    left: 0;
     width: 100%;
 
 }
 
-#pipi {
-    font-family: Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  #pipi td, #pipi th {
-    border: 1px solid #ddd;
-    padding: 8px;
-  }
-  
-  #pipi tr:nth-child(even){background-color: #f2f2f2;}
-  
-  #pipi tr:hover {background-color: #ddd;}
-  
-  #pipi th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #04AA6D;
-    color: white;
-  }
 
 /* Style the content */
 .content {
     height: 70%;
     overflow: auto;
-    padding-top: 6%;
-    padding-left: 20px;
-    padding-bottom: 6%;
+    text-align: left;
+    /* top : 13% ; */
+    /* margin: 20px; */
+    margin-top: 6%;
+
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+
+    color: black;
+    background-image: url('/pictures/ajfsfa.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #105652;
+
+}
+
+.content #search {
+    margin-top: 10px;
+
+}
+
+.content h2 {
+    text-align: left;
+    text-decoration: solid;
+    color: #f1f1f1;
+    border: 1px dashed black;
+    background-color: black;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    margin: 0px;
+
+    background-image: url('/pictures/gipy_3.webp');
 }
 
 .footer div {
@@ -63,9 +86,10 @@ body {
     display: block;
 }
 
+
 .footer div:hover {
     background-color: #333;
-    color: blue;
+    color: #f1f1f1;
 }
 
 
@@ -105,21 +129,35 @@ body {
 }
 
 .emaildetails {
+    background-color: #FEECE9;
     position: fixed;
     bottom: 0;
     left: 0;
 }
 
 .creators {
+    background-color: #FEECE9;
     position: fixed;
     bottom: 0;
     right: 0;
 }
 
+body .footer .emaildetails:hover {
+    background-color: #105652;
+    color: #FAEEE0;
+}
+
+body .footer .creators:hover {
+    background-color: #105652;
+    color: #FAEEE0;
+}
+
 .footer {
-    background-color: #f1f1f1;
+    /* background-color: #f1f1f1; */
     clear: both;
-    padding: 10px;
+    z-index: 2;
+    margin-top: 100px;
+
     height: 10%;
     position: fixed;
     bottom: 0;
@@ -127,3 +165,92 @@ body {
     width: 100%;
     text-align: center;
 }
+
+#apodimage {
+    text-align: center;
+    margin-left: 350px;
+    margin-right: 350px;
+    opacity: 0.1;
+    background-repeat: repeat;
+}
+
+/* 
+#pipi {
+    color: white;
+    background-color: #1B1A17;
+} */
+
+/* #pipi .intro_name {
+    padding-left: 10px;
+    font-size: larger;
+    font-weight: bold;
+    color: #B8FFF9;
+
+} */
+
+/* #pipi #imageurl img{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    width: 50% ;
+    overflow: auto;
+    border: 2px solid whitesmoke;
+    opacity: 0.7;
+     background-color: #38A3A5; 
+    
+ }  */
+
+#pipi table{
+    width: 100% ;
+    
+}
+
+#pipi {
+    align-items: center;
+    border: 2px solid whitesmoke;
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 100px;
+    
+    /* width:  100%; */
+    /* color: white;
+    background-color: #1B1A17; */
+}
+
+#pipi td, #pipi th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#pipi tr:nth-child(even) {
+    background-color: rgba(255,255,255, 0.3) ;
+    text-shadow: 0.5px 0.5px;
+    
+    
+}
+
+#pipi tr:nth-child(odd) {
+    background-color: rgba(200,200,200, 0.3) ;
+    color: black;
+    text-shadow: 0.5px 0.5px;
+}
+
+
+#pipi td{
+    opacity: 0.8;
+}
+
+#pipi tr:hover {
+    background-color: #ddd;
+    opacity: 1 ;
+}
+
+#pipi th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #1A132F;
+    color:whitesmoke;
+} 

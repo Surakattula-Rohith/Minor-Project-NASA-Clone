@@ -42,6 +42,16 @@ async function sendApiRequest() {
 function useApiData(data) {
     // document.querySelector("#pipi").innerHTML += date;
 
+    var x = document.querySelector("#search");
+    x.style.display = "none";
+    x.style.margin = "0%";
+    x.style.padding = "0%";
+
+    var y = document.querySelector("#apodimage");
+    y.style.display = "none";
+    y.style.margin = "0%";
+    y.style.padding = "0%";
+
     let text = "<table>";
 
     //near_earth_objects["2022-03-29"][0].id
