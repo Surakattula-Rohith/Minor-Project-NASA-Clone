@@ -37,7 +37,7 @@ function useApiData(data) {
     let n = data.photos.length;
 
     document.querySelector("#pipi").innerHTML = '<br>';
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 40; i++) {
         document.querySelector("#pipi").innerHTML += '<p id="cameraname"><span class="intro_name">Camera Name: </span>' + data.photos[i].camera.full_name + '</p>';
         document.querySelector("#pipi").innerHTML += '<p id="cameraid"><span class="intro_name">Camera ID: </span>' + data.photos[i].id + '</p>';
         document.querySelector("#pipi").innerHTML += '<p id="imageurl"><img src ="' + data.photos[i].img_src + '"></p>';

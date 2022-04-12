@@ -57,6 +57,25 @@ body .footer {
 
 }
 
+#search {
+    font-size: medium;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(49, 23, 247);
+    border-radius: 10px;
+}
+
+#search:hover {
+    color: rgb(254, 15, 230);
+    font-weight: bolder;
+    padding: 8px;
+    text-align: center;
+    background-color: white;
+    border: 2px solid rgb(252, 13, 93);
+}
+
 .content #search {
     margin-top: 10px;
 
@@ -188,7 +207,7 @@ body .footer .creators:hover {
 
 #pipi {
     color: white;
-    background-color: #1B1A17;
+    background-color: #060b43cd;
 }
 
 #pipi .intro_name {

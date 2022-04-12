@@ -35,6 +35,26 @@ body .footer {
 }
 
 
+#search {
+    font-size: medium;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(49, 23, 247);
+    border-radius: 10px;
+}
+
+#search:hover {
+    color: rgb(254, 15, 230);
+    font-weight: bolder;
+    padding: 8px;
+    text-align: center;
+    background-color: white;
+    border: 2px solid rgb(252, 13, 93);
+}
+
+
 /* Style the content */
 .content {
     height: 70%;
@@ -216,6 +236,7 @@ body .footer .creators:hover {
 
 #pipi table{
     width: 100% ;
+    padding: 10px;
     
 }
 
@@ -251,18 +272,25 @@ body .footer .creators:hover {
 
 
 #pipi td{
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 #pipi tr:hover {
-    background-color: #ddd;
+    background-color: rgb(210, 246, 252);
+
     opacity: 1 ;
 }
 
 #pipi th {
     padding-top: 12px;
     padding-bottom: 12px;
-    text-align: left;
-    background-color: #1A132F;
-    color:whitesmoke;
-} 
+    text-align: center;
+    background-color: #1b0b4bac;
+    color:whitesmoke
+}
+
+#pipi th:hover{
+    /* background-color: #1b0b4bd3;
+    color:whitesmoke; */
+    opacity: 1;
+}
