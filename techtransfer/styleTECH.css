@@ -42,13 +42,9 @@ body .footer {
     text-align: left;
     /* top : 13% ; */
     /* margin: 20px; */
-    margin-top: 6%;
-
-    padding-top: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-
-
+    padding: 10px;
+    padding-top: 7%;
+    padding-bottom: 50px;
     color: black;
     background-image: url('/pictures/ajfsfa.webp');
     background-size: cover;
