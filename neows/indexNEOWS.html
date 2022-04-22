@@ -1,51 +1,78 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title> NEOWS Template</title>
+  <head>
+    <title>NEOWS Template</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-
-    <link rel="stylesheet" href="styleNEOWS.css">
+    <link rel="stylesheet" href="styleNEOWS.css" />
 
     <script src="scriptNEOWS.js"></script>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div class="header">
-        <h2>Minor Project</h2>
+      <h2>Minor Project</h2>
     </div>
 
     <div class="content">
-        <h2 id="mars">Near Earth Objects: </h2>
-        <button id="search" onclick="buttonPress()">Click Here!!</button><br>
-        <img id="apodimage" src="/pictures/giphy_6.webp">
-        <p id="pipi"></p>
+      <h2 id="mars">Near Earth Objects:</h2>
+      <p
+        style="
+          color: aliceblue;
+          background-color: rgb(2, 44, 3);
+          padding:20px 20px 20px 20px ;
+          margin: 20px 20px 10px 20px;
+          border: 2px solid white;    
+          text-align: left;
+          font-weight: 600;
+          font-family: cursive;
+        "
+      >
+        NeoWs (Near Earth Object Web Service) is a RESTful web service for near
+        earth Asteroid information. With NeoWs a user can: search for Asteroids
+        based on their closest approach date to Earth, lookup a specific
+        Asteroid with its NASA JPL small body id, as well as browse the overall
+        data-set.
+        <br>
+      </p>
+      <button id="search" onclick="buttonPress()">Click Here!!</button><br />
+      <img id="apodimage" src="/pictures/giphy_6.webp" />
+      <p id="pipi"></p>
     </div>
 
     <div class="footer">
-        <div class="emaildetails">EMAIL
-            <span class="tooltiptext">
-                <p>Surakattula Rohith<br> srohith.charan@gmail.com <br></p>
-                <p>G.Satya Sai<br> satyasai1112019@gmail.com <br></p>
-                <p>Abhiram Potharaju<br> abhirampotharaj@gmail.com <br></p>
-                <p>Kanundla Sandeep<br> sandeepkanundla@gmail.com <br></p>
-            </span>
-        </div>
-        <div class="creators">CREATORS
-            <span class="tooltiptext">
-                <p>Surakattula Rohith<br>1911114289</p>
-                <p>G.Satya Sai<br>1911114064</p>
-                <p>Abhiram Potharaju<br>1911114052</p>
-                <p>Kanundla Sandeep<br>1911114079</p>
-            </span>
-        </div>
-        <p style="text-align: center;">MANIT Bhopal</p>
-
+      <div class="emaildetails">
+        EMAIL
+        <span class="tooltiptext">
+          <p>
+            Surakattula Rohith<br />
+            srohith.charan@gmail.com <br />
+          </p>
+          <p>
+            G.Satya Sai<br />
+            satyasai1112019@gmail.com <br />
+          </p>
+          <p>
+            Abhiram Potharaju<br />
+            abhirampotharaj@gmail.com <br />
+          </p>
+          <p>
+            Kanundla Sandeep<br />
+            sandeepkanundla@gmail.com <br />
+          </p>
+        </span>
+      </div>
+      <div class="creators">
+        CREATORS
+        <span class="tooltiptext">
+          <p>Surakattula Rohith<br />1911114289</p>
+          <p>G.Satya Sai<br />1911114064</p>
+          <p>Abhiram Potharaju<br />1911114052</p>
+          <p>Kanundla Sandeep<br />1911114079</p>
+        </span>
+      </div>
+      <p style="text-align: center">MANIT Bhopal</p>
     </div>
-
-</body>
-
+  </body>
 </html>

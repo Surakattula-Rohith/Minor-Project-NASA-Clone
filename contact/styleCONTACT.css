@@ -95,10 +95,12 @@ body .footer {
     font-weight: bold;
 }
 .content #faculty{
-    background-color: #3EDBF0;
+    background-color: #4e05f9;
+    color: #FFFBE7;
 }
 .content #faculty:hover{
     background-color: #5f3ef0;
+    color: #fad72a;
 }
 
 .footer div {
