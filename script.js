@@ -1,25 +1,15 @@
-
-function buttonPress(){
-    console.log("Button Pressed");
-    sendApiRequest();
-}
-
-async function sendApiRequest() {
-
-    let API_KEY = "GAa8k8q7BiG5xUuGBKxrpuXCv1XjRWbHi4ImRd3J";
-
-    let response = await fetch('https://api.nasa.gov/planetary/apod?api_key=' + API_KEY);
-    console.log(response);
-
-    let data = await response.json();
-    console.log(data);
-
-    useApiData(data);
-
-}
-
-function useApiData(data) {
-
-    document.querySelector("#pipi").innerHTML += data.explanation;
-    document.querySelector("#pipi").innerHTML += '<img src ="' + data.url + '">';
-}
+ // JavaScript function to load external HTML content
+ function loadContent(url) {
+    fetch(url)
+      .then(response => response.text()) // Get the HTML content as text
+      .then(data => {
+        // Update the main content with the fetched data
+        const mainContent = document.getElementById('main-content');
+        mainContent.innerHTML = data;
+      })
+      .catch(error => {
+        console.error("Error loading the content:", error);
+        const mainContent = document.getElementById('main-content');
+        mainContent.innerHTML = "<h1>Content failed to load</h1>";
+      });
+  }

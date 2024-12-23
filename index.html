@@ -15,35 +15,25 @@
   </head>
 
   <body>
-    <div class="header">
+    <!-- Header Section -->
+    <header>
       <h2>Minor Project</h2>
-      <div class="scroll-right">
-        <p>Welcome To this Nasa API Project</p>
-      </div>
-    </div>
+      <button onclick="location.href='index.html'">Home</button>
+    </header>
 
-    <div class="sidenav">
-      <div id="sidenavup">
-        <a href="index.html" target="_self" id="link1">HOME</a>
-        <a href="contact/indexCONTACT.html" target="_blank" id="link2"
-          >TEAM MEMBERS</a
-        >
-      </div>
-      <div id="sidemiddle"></div>
-      <div id="sidenavdown">
-        <a href="apod/indexAPOD.html" target="_blank" id="link3">APOD</a>
-        <!-- <a href="earth/indexEARTH.html" target="_blank" id="link4">EARTH</a> -->
-        <a href="marsrover/indexMARS.html" target="_blank" id="link5"
-          >Mars-Rover Imagery</a
-        >
-        <a href="techtransfer/indexTECH.html" target="_blank" id="link6"
-          >Tech-Patents Details</a
-        >
-        <a href="neows/indexNEOWS.html" target="_blank" id="link7">Asteroids</a>
-      </div>
-    </div>
+    <!-- Side Navigation -->
+    <nav>
+      <ul>
+        <li><a href="#" onclick="loadContent('contact/indexCONTACT.html')">Teammembers</a></li>
+        <li><a href="#" onclick="loadContent('apod/indexAPOD.html')">APOD</a></li>
+        <li><a href="#" onclick="loadContent('techtransfer/indexTECH.html')">TechPatents</a></li>
+        <li><a href="#" onclick="loadContent('marsrover/indexMARS.html')">MarsImagery</a></li>
+        <li><a href="#" onclick="loadContent('neows/indexNEOWS.html')">Asteroids</a></li>
+      </ul>
+    </nav>
 
-    <div class="content">
+    <!-- Main Content -->
+    <main id="main-content">
       <h1>About NASA</h1>
       <p>
         The National Aeronautics and Space Administration is America’s civil
@@ -67,70 +57,12 @@
         enable future exploration and benefit life on Earth.
       </p>
       <br />
-      <p>
-        NASA also leads a Moon to Mars exploration approach, which includes
-        working with U.S. industry, international partners, and academia to
-        develop new technology, and send science research and soon humans to
-        explore the Moon on Artemis missions that will help prepare for human
-        exploration of the Red Planet. In addition to those major missions, the
-        agency shares what it learns so that its information can make life
-        better for people worldwide. For example, companies use NASA discoveries
-        and technologies to create new products for the public. To ensure future
-        success for the agency and the nation, NASA also supports education
-        efforts in STEM with an emphasis on increasing diversity in our future
-        workforce.
-      </p>
-      <br />
+    </main>
 
-      <p>
-        NASA is led by Administrator Bill Nelson, who became the agency's 14th
-        administrator on May 3, 2021. Nelson served in the U.S. Senate for 18
-        years from Florida and as a payload specialist on space shuttle mission
-        61-C in 1986.
-      </p>
-      <br />
-      <p>
-        The term "astronaut" derives from the Greek words meaning "space
-        sailor," and refers to all who have been launched as crew members aboard
-        NASA spacecraft bound for orbit and beyond. The term "astronaut" has
-        been maintained as the title for those selected to join the NASA corps
-        of astronauts who make "space sailing" their career profession.
-      </p>
-      <br />
-    </div>
+    <!-- Footer Section -->
+    <footer>
+      <p>Footer Content</p>
+    </footer>
 
-    <div class="footer">
-      <div class="emaildetails">
-        EMAIL
-        <span class="tooltiptext">
-          <p>
-            Surakattula Rohith<br />
-            srohith.charan@gmail.com <br />
-          </p>
-          <p>
-            G.Satya Sai<br />
-            satyasai1112019@gmail.com <br />
-          </p>
-          <p>
-            Abhiram Potharaju<br />
-            abhirampotharaj@gmail.com <br />
-          </p>
-          <p>
-            Kanundla Sandeep<br />
-            sandeepkanundla@gmail.com <br />
-          </p>
-        </span>
-      </div>
-      <div class="creators">
-        CREATORS
-        <span class="tooltiptext">
-          <p>Surakattula Rohith <br />1911114289<br /></p>
-          <p>G.Satya Sai <br />1911114064<br /></p>
-          <p>Abhiram Potharaju <br />1911114052<br /></p>
-          <p>Kanundla Sandeep <br />1911114079<br /></p>
-        </span>
-      </div>
-      <p style="text-align: center">MANIT Bhopal</p>
-    </div>
   </body>
 </html>
