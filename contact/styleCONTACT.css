@@ -97,3 +97,117 @@ footer a {
 footer a:hover {
   color: #fcfdff;
 }
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+/* Main Content Styling */
+.team-info {
+  max-width: 800px;
+  margin: 5rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-info:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.team-info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #1e293b;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.team-info p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #475569;
+}
+
+.team-info a {
+  color: #1e40af;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.team-info a:hover {
+  color: #2563eb;
+}
+
+/* Section Styling */
+.mentor-info {
+  margin-bottom: 2rem;
+}
+
+.team-member {
+  margin-top: 2rem;
+}
+
+.member {
+  background-color: #f1f5f9;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.member p {
+  font-size: 1rem;
+  color: #1f2937;
+}
+
+.member p strong {
+  color: #1e293b;
+}
+
+.member a {
+  font-weight: bold;
+  transition: font-weight 0.3s ease;
+}
+
+.member:hover a {
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .team-info {
+    padding: 1rem;
+  }
+  
+  .team-info h2 {
+    font-size: 1.5rem;
+  }
+  
+  .member {
+    padding: 0.8rem;
+  }
+}
