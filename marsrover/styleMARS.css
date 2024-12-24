@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.6;
   color: #333;
   background-color: #f5f5f5;
@@ -50,7 +50,6 @@ header button:hover {
 
 /* Main Content Styling */
 main {
-  
   padding: 6rem 2rem 2rem; /* Space for header and content */
   background-color: #ffffff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -151,7 +150,10 @@ footer a:hover {
 /* Content Container Styling */
 #content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Two-column responsive layout */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Two-column responsive layout */
   gap: 1.5rem; /* Space between blocks */
   padding: 1rem;
 }
@@ -171,13 +173,15 @@ footer a:hover {
 }
 
 /* Camera Info Styling */
-#cameraname, #cameraid {
+#cameraname,
+#cameraid {
   font-size: 0.9rem;
   color: #374151;
   margin-bottom: 0.5rem;
 }
 
-#cameraname span, #cameraid span {
+#cameraname span,
+#cameraid span {
   color: #2563eb;
   font-weight: bold;
 }
@@ -198,7 +202,6 @@ footer a:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
-
 /* Horizontal Line Styling */
 hr {
   border: none;
@@ -206,5 +209,3 @@ hr {
   margin: 1rem 0;
   opacity: 0.6;
 }
-
-

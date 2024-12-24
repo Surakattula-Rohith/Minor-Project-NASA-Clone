@@ -6,25 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styleMARS.css" />
     <script src="scriptMARS.js"></script>
+    <link rel="icon" href="../pictures/ajfsfa.webp"  />
   </head>
 
   <body>
     <header>
-      <h2>MINOR Project 2022 </h2>
+      <h2>MINOR Project 2022</h2>
       <button onclick="location.href='../index.html'">Home</button>
     </header>
 
     <main class="content">
       <h2 id="mars">Mars Rover Details :</h2>
       <p>
-        This API is designed to collect image data gathered by NASA's Curiosity, Opportunity, and Spirit rovers on Mars and make it more easily available to other developers, educators, and citizen scientists. 
-        Each rover has its own set of photos stored in the database, which can be queried separately. There are several possible queries that can be made against the API. Photos are organized by the sol (Martian rotation or day) on which they were taken, counting up from the rover's landing date.
+        This API is designed to collect image data gathered by NASA's Curiosity,
+        Opportunity, and Spirit rovers on Mars and make it more easily available
+        to other developers, educators, and citizen scientists. Each rover has
+        its own set of photos stored in the database, which can be queried
+        separately. There are several possible queries that can be made against
+        the API. Photos are organized by the sol (Martian rotation or day) on
+        which they were taken, counting up from the rover's landing date.
       </p>
       <button id="loadContent" onclick="buttonPress()">Click Here!!</button>
       <img id="bufferimage" src="/pictures/giphy_6.webp" />
       <p id="content"></p>
     </main>
-    
 
     <footer>
       <a href="../contact/indexCONTACT.html">Team Members</a>

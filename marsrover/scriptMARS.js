@@ -25,28 +25,28 @@ function useApiData(data) {
   y.style.padding = "0%";
 
   // Generate 96 unique random numbers between 0 and 1000
-let randomIndices = [];
-while (randomIndices.length < 96) {
+  let randomIndices = [];
+  while (randomIndices.length < 96) {
     let randomNumber = Math.floor(Math.random() * 1000);
     if (!randomIndices.includes(randomNumber)) {
-        randomIndices.push(randomNumber);
+      randomIndices.push(randomNumber);
     }
-}
+  }
 
-// Display data for the selected random indices
-document.querySelector("#content").innerHTML = ''; // Clear existing content
+  // Display data for the selected random indices
+  document.querySelector("#content").innerHTML = ""; // Clear existing content
 
-randomIndices.forEach((i) => {
-    if (i <= data.photos.length) { // Ensure the index is within the available range
-        const block = `
+  randomIndices.forEach((i) => {
+    if (i <= data.photos.length) {
+      // Ensure the index is within the available range
+      const block = `
             <div>
                 <p id="cameraname"><span>Camera Name: </span>${data.photos[i].camera.full_name}</p>
                 <p id="cameraid"><span>Camera ID: </span>${data.photos[i].id}</p>
                 <p id="imageurl"><img src="${data.photos[i].img_src}" alt="Mars Image"></p>
             </div>
         `;
-        document.querySelector("#content").innerHTML += block;
+      document.querySelector("#content").innerHTML += block;
     }
-});
-
+  });
 }
