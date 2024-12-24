@@ -148,5 +148,58 @@ footer a:hover {
 
 #content:hover {
   background-color: #eef2ff;
-  border-left-color: #2563eb;
+}
+/* General Table Styling */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+/* Table Header Styling */
+.styled-table thead {
+  background-color: #3b82f6;
+  color: #ffffff;
+}
+
+.styled-table th {
+  padding: 12px 15px;
+  text-align: left;
+  font-size: 14px;
+}
+
+/* Table Body Styling */
+.styled-table tbody tr {
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #e2e8f0;
+}
+
+.styled-table td {
+  padding: 12px 15px;
+  font-size: 13px;
+  color: #333;
+}
+
+/* Individual Cell Styling */
+.data-id, .data-name, .data-diameter, .data-velocity, .data-approach {
+  text-align: center;
+}
+
+/* Border Styling */
+.styled-table td, .styled-table th {
+  border: 1px solid #d1d5db;
+}
+
+/* Additional customization */
+.styled-table th, .styled-table td {
+  border-radius: 5px;
 }
